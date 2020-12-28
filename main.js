@@ -53,14 +53,12 @@ function animate() {
 		camera.position.y + 10,
 		camera.position.z + 10
 	);
-	// requestAnimationFrame(animate);
-	const rotate = document.querySelector('#rotate');
-	rotate.addEventListener('click', () => {
-		model.rotation.x += 0.01;
-		model.rotation.y += 0.01;
-		requestAnimationFrame(animate);
-		// renderer.render(scene, camera);
-	});
+	requestAnimationFrame(animate);
+	// const rotate = document.querySelector('#rotate');
+	// rotate.addEventListener('click', () => {
+	// 	model.rotation.x += 0.01;
+	// 	model.rotation.y += 0.01;
+	// });
 }
 
 init();
