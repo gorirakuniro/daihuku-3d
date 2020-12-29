@@ -48,4 +48,5 @@ p::after {
 }
 p:hover {
 	color: #fff;
+	border: 10px solid #fff;
 }

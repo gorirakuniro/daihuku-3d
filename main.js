@@ -59,12 +59,12 @@ function animate() {
 
 	const zoom = document.querySelector('#zoom');
 	zoom.addEventListener('click', () => {
-		camera.position.z -= 0.01;
+		camera.position.z -= 0.001;
 	});
 
 	const back = document.querySelector('#back');
 	back.addEventListener('click', () => {
-		camera.position.z += 0.01;
+		camera.position.z += 0.001;
 	});
 
 	const rotate = document.querySelector('#rotate');
