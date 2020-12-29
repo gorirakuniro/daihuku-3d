@@ -34,7 +34,7 @@ function init() {
 
 	new THREE.GLTFLoader().load('model/model.gltf', (result) => {
 		model = result.scene.children[0];
-		model.scale.set(4, 4, 4);
+		model.scale.set(1, 1, 1);
 		model.position.set(5, 15, 5);
 		model.traverse((n) => {
 			if (n.isMesh) {
@@ -71,6 +71,12 @@ function animate() {
 	const rotate = document.querySelector('#rotate');
 	rotate.addEventListener('click', () => {
 		model.rotation.y -= 0.001;
+	});
+	const scale = document.querySelector('#scale');
+	scale.addEventListener('click', () => {
+		model.scale.x += 0.001;
+		model.scale.y += 0.001;
+		model.scale.z += 0.001;
 	});
 }
 
