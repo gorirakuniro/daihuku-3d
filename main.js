@@ -34,6 +34,7 @@ function init() {
 
 	new THREE.GLTFLoader().load('model/model.gltf', (result) => {
 		model = result.scene.children[0];
+		model.scale.set(4, 4, 4);
 		model.position.set(5, 15, 5);
 		model.traverse((n) => {
 			if (n.isMesh) {
