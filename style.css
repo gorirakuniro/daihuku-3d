@@ -50,3 +50,9 @@ p:hover {
 	color: #fff;
 	border: 10px solid #fff;
 }
+
+@media screen and (max-width: 567px) {
+	p {
+		font-size: 2rem;
+	}
+}
