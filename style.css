@@ -71,10 +71,12 @@ p:hover {
 	#back {
 		width: 50px;
 		height: 25px;
+		display: none;
 	}
 	#rotate {
 		width: 50px;
 		height: 25px;
+		display: none;
 	}
 	#scale {
 		width: 50px;
