@@ -54,21 +54,23 @@ function animate() {
 		camera.position.z + 10
 	);
 	requestAnimationFrame(animate);
+	model.rotation.x += 0.001;
 	model.rotation.y += 0.001;
+
+	const zoom = document.querySelector('#zoom');
+	zoom.addEventListener('click', () => {
+		camera.position.z -= 0.01;
+	});
+
+	const back = document.querySelector('#back');
+	back.addEventListener('click', () => {
+		camera.position.z += 0.01;
+	});
+
+	const rotate = document.querySelector('#rotate');
+	rotate.addEventListener('click', () => {
+		model.rotation.y -= 0.001;
+	});
 }
 
 init();
-
-const zoom = document.querySelector('#zoom');
-zoom.addEventListener('click', () => {
-	camera.position.set(7, 17, 15);
-});
-const back = document.querySelector('#back');
-back.addEventListener('click', () => {
-	camera.position.set(7, 17, 25);
-});
-
-const rotate = document.querySelector('#rotate');
-rotate.addEventListener('click', () => {
-	model.rotation.y = 10;
-});

@@ -28,3 +28,24 @@ button {
 	top: 80%;
 	left: 50%;
 }
+p {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20rem;
+	letter-spacing: 100;
+	font-family: ta-rb, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	transition: all 0.4s;
+}
+p::after {
+	content: '';
+	width: 100px;
+	height: 5px;
+	background: #fff;
+}
+p:hover {
+	color: #fff;
+}
