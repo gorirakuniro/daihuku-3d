@@ -54,11 +54,7 @@ function animate() {
 		camera.position.z + 10
 	);
 	requestAnimationFrame(animate);
-	// const rotate = document.querySelector('#rotate');
-	// rotate.addEventListener('click', () => {
-	// 	model.rotation.x += 0.01;
-	// 	model.rotation.y += 0.01;
-	// });
+	model.rotation.y += 0.001;
 }
 
 init();
@@ -72,7 +68,7 @@ back.addEventListener('click', () => {
 	camera.position.set(7, 17, 25);
 });
 
-// const rotate = document.querySelector('#rotate');
-// rotate.addEventListener('click', () => {
-// 	model.rotation.y = 10;
-// });
+const rotate = document.querySelector('#rotate');
+rotate.addEventListener('click', () => {
+	model.rotation.y = 10;
+});
