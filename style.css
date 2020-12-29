@@ -10,32 +10,29 @@ button {
 	top: 80%;
 	left: 30%;
 }
-#back {
-	background: #fff;
-	border: 1px solid #000;
-	width: 100px;
+#zoom {
+	top: 80%;
+	left: 20%;
+	width: 200px;
 	height: 50px;
-	position: absolute;
+}
+#back {
 	top: 80%;
 	left: 40%;
+	width: 100px;
+	height: 50px;
 }
 #rotate {
-	background: #fff;
-	border: 1px solid #000;
-	width: 100px;
-	height: 50px;
-	position: absolute;
 	top: 80%;
 	left: 50%;
-}
-#scale {
-	background: #fff;
-	border: 1px solid #000;
 	width: 100px;
 	height: 50px;
-	position: absolute;
+}
+#scale {
 	top: 80%;
 	left: 60%;
+	width: 100px;
+	height: 50px;
 }
 p {
 	position: absolute;
@@ -60,17 +57,27 @@ p:hover {
 	border: 10px solid #fff;
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 667px) {
 	p {
 		font-size: 2rem;
 	}
 	button {
-		background: #fff;
-		border: 1px solid #000;
+		margin: 5px;
+	}
+	#zoom {
 		width: 50px;
 		height: 25px;
-		position: absolute;
-		top: 80%;
-		left: 30%;
+	}
+	#back {
+		width: 50px;
+		height: 25px;
+	}
+	#rotate {
+		width: 50px;
+		height: 25px;
+	}
+	#scale {
+		width: 50px;
+		height: 25px;
 	}
 }
