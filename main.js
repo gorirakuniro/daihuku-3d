@@ -32,7 +32,7 @@ function init() {
 
 	document.body.appendChild(renderer.domElement);
 
-	new THREE.GLTFLoader().load('model/scene.gltf', (result) => {
+	new THREE.GLTFLoader().load('model/model.gltf', (result) => {
 		model = result.scene.children[0];
 		model.position.set(5, 15, 5);
 		model.traverse((n) => {
@@ -54,7 +54,7 @@ function animate() {
 		camera.position.z + 10
 	);
 	requestAnimationFrame(animate);
-	model.rotation.x += 0.001;
+	// model.rotation.x += 0.001;
 	model.rotation.y += 0.001;
 
 	const zoom = document.querySelector('#zoom');
