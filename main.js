@@ -24,7 +24,9 @@ function init() {
 	scene.add(spotLight);
 
 	scene.add(new THREE.AxesHelper(500));
-	renderer = new THREE.WebGLRenderer();
+	
+	// antialiasはギザギザを滑らかにする
+	renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.toneMapping = THREE.ReinhardToneMapping;
 	renderer.toneMappingExposure = 2.3;
 	renderer.shadowMap.enabled = true;
